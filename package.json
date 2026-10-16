@@ -1,0 +1,17 @@
+{
+  "name": "ponto-papel-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "jspdf": "4.2.1"
+  }
+}

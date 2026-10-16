@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f7f8"><meta name="apple-mobile-web-app-capable" content="yes"><title>Ponto & Papel Demo · Vendas e Estoque</title><meta name="description" content="Teste um sistema de vendas e estoque com uma papelaria fictícia. Produtos, impressões, código de barras e comprovantes de demonstração.">
+<link rel="stylesheet" href="/styles.css"><link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<aside class="demo-banner"><div><strong>Demonstração pública</strong><span>Loja e dados fictícios. Nenhuma operação real.</span></div><div class="demo-actions"><button id="reset-demo">Restaurar exemplos</button><a href="https://marcelo-andrade-portfolio-virid.vercel.app/">Portfólio ↗</a></div></aside>
+<header class="topbar"><div class="topbar-inner row"><div class="brand"><img class="brand-logo" src="/logo.svg" width="44" height="44" alt=""><div><strong>Ponto & Papel</strong><small>Gestão da loja</small></div></div><div class="top-actions"><button class="iconbtn" id="theme-toggle" aria-label="Alternar tema"></button><div class="iconbtn avatar" aria-label="Ponto & Papel">PP</div></div></div></header>
+<div class="sync-status" id="sync-status" role="status">Demonstração local · sem acesso ao sistema original</div>
+<main id="app"><p class="empty">Carregando sua loja…</p></main><nav class="bottomnav" aria-label="Navegação principal"><div class="bottomnav-inner" id="navigation"></div></nav>
+<button class="cartbar" id="cart-bar" hidden aria-haspopup="dialog"></button>
+<dialog id="cart-dialog" class="sheet" aria-labelledby="cart-title"></dialog>
+<dialog id="form-dialog" aria-labelledby="form-title"></dialog>
+<dialog id="receipt-dialog" aria-labelledby="receipt-title"></dialog>
+<dialog id="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+<div class="toast" id="toast" role="status" hidden></div><div id="print-area"></div>
+<script type="module" src="/app.js"></script></body></html>
+
