@@ -1,6 +1,9 @@
+import {resolvePortfolioReturn} from './portfolio-return.js';
 import { createReport, createReceipt } from './report.js';
 import { createDemoStore } from './demo-store.js';
 const demoStore=createDemoStore();
+let returnStorage;try{returnStorage=window.sessionStorage}catch{}
+document.querySelector('[data-portfolio-return]').href=resolvePortfolioReturn(window.location.search,returnStorage);
 
 'use strict';
 const $=s=>document.querySelector(s);
